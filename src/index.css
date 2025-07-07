@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    height: 100%;
+    height: 150vh;
     background: linear-gradient(#c8c8dc,#eedbe1);
     background-size: cover;
 }
