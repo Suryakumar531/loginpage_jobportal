@@ -17,15 +17,15 @@ export const Login = () => {
           {action==="Sign up"&&
           <div className="input">
             <img src={nameIcon} alt="username"/>
-            <input type="text" placeholder='Username'></input>
+            <input type="text" aria-label="username" placeholder='Username'></input>
           </div>}
           <div className="input">
             <img src={emailIcon} alt="email"/>
-            <input type="email" placeholder='E-mail'></input>
+            <input type="email" aria-label="email" placeholder='E-mail'></input>
           </div>
           <div className="input">
             <img src={passwordIcon} alt="password"/>
-            <input type="password" placeholder='Password'></input>
+            <input type="password" aria-label="password" placeholder='Password'></input>
           </div>
         </div>
         {action==="Login"&&
