@@ -9,7 +9,7 @@ export const Login = () => {
 
   return (
     <>
-      <div className='input-container'>
+      <form className='input-container'>
         <div className="input-header">
           <div className={action==="Sign up"?"input-heading lightgray":"input-heading"} onClick={()=>setAction("Sign up")} >Sign up</div>
           <div className={action==="Login"?"input-heading lightgray":"input-heading"} onClick={()=>setAction("Login")}>Login</div>
@@ -34,7 +34,7 @@ export const Login = () => {
         <div className="submit-area">
           <button className='submit'>{action}</button>
         </div>
-      </div>
+      </form>
     </>
   )
 }
