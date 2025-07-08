@@ -33,8 +33,6 @@ export const Login = () => {
         <div className="forget-password">Forget Password? <span>click here</span></div>}
         <div className="submit-area">
           <button className='submit'>{action}</button>
-          {/* <div className={action==="Sign up"?"submit lightgray":"submit"} onClick={()=>setAction("Sign up")}>Sign Up</div>
-          <div className={action==="Login"?"submit lightgray":"submit"} onClick={()=>setAction("Login")}>Login</div> */}
         </div>
       </div>
     </>
