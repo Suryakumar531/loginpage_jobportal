@@ -10,7 +10,7 @@
   gap: 11px;
   background-color: whitesmoke;
   height: 80px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
 .portal-logo {
@@ -133,15 +133,23 @@
   color: black;
   text-align: center;
   padding: 5px 40px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.2);
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 90px;
 }
 
 .newsletter {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-text {
+  margin-bottom: 5px;
+  color: #a69ec6;
 }
 
 .newsletter-form {
@@ -149,6 +157,7 @@
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .newsletter-form input {
@@ -156,17 +165,18 @@
   border: none;
   border-radius: 4px;
   width: 220px;
+  background-color: lightgray;
 }
 
 .newsletter-form button {
-  padding: 8px 16px;
+  padding: 10px 22px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #a69ec6;
   color: white;
-  border-radius: 4px;
+  border-radius: 17px;
   cursor: pointer;
 }
 
 .newsletter-form button:hover {
-  background-color: #45a049;
+  background-color: #8e85ad;
 }
