@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="newsletter">
             <h3 className='newsletter-text'>Subscribe to our Newsletter</h3>
             <form className="newsletter-form">
-              <input type="email" placeholder="Enter your email" />
+              <input aria-label="email for newsletter" type="email" placeholder="Enter your email" />
               <button type="submit">Subscribe</button>
             </form>
         </div>
