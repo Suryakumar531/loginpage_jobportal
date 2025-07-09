@@ -11,13 +11,13 @@ export const Login = () => {
     const username = formData.get("username")
     const email = formData.get("email")
     const password = formData.get("password")
-    console.log(username)
+    console.log("Sign up is successful")
   }
 
   function login(formData){
     const email = formData.get("email")
     const password = formData.get("password")
-    console.log(email)
+    console.log("successfully Logged in")
   }
 
   return (
