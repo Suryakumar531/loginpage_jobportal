@@ -1,14 +1,17 @@
 import React from 'react'
+import './Header.css'
 import jobLogo from "../assets/job-portal.png"
 
 export const Header = () => {
   return (
     <>
         <header className='portal-header'>
-            <img className="portal-logo" src={jobLogo} alt="job-portal-logo" />
-            <h1 className='portal-title'>Job Portal</h1>
+            <div className="portal-logo-container">
+              <img className="portal-logo" src={jobLogo} alt="job-portal-logo" />
+              <h1>Job Portal</h1>
+            </div>
             <div className='employer-login-link'>
-                <a href='#'>For Employers</a>
+                <span>For Employers</span>
             </div>
         </header>
     </>

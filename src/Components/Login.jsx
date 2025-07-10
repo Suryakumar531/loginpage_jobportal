@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Login.css"
 import emailIcon from "../assets/email.png"
 import passwordIcon from "../assets/password.png"
 import nameIcon from "../assets/person.png"
@@ -17,6 +18,7 @@ export const Login = () => {
   function login(formData){
     const email = formData.get("email")
     const password = formData.get("password")
+    const rememberMe = formData.get("remember")
     console.log("successfully Logged in")
   }
 

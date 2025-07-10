@@ -1,0 +1,41 @@
+.portal-header {
+  position: fixed;           
+  top: 0;                    
+  left: 0;                   
+  right: 0; 
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 80px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.portal-logo-container{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-left: 45%;
+}
+
+.portal-logo {
+  width: 60px;
+}
+
+
+.employer-login-link {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.employer-login-link > span {
+  text-decoration: none;
+  font-weight: 600;
+  color: #a69ec6;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.employer-login-link > span:hover {
+  color: #8e85b0;
+}
