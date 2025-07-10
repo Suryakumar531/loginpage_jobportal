@@ -15,6 +15,23 @@
 
 .portal-logo {
   width: 60px;
+  margin-left: auto;
+}
+
+
+.employer-login-link {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.employer-login-link > a {
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.employer-login-link > a:hover {
+  color: #a69ec6;
 }
 
 .input-container {
@@ -78,6 +95,12 @@
   color: #797979;
   font-size: 20px;
   font-weight: 500;
+}
+
+.input-checkbox {
+  padding-left: 3.6rem;
+  font-size: 20px;
+  color: #797979;
 }
 
 .forget-password{

@@ -41,6 +41,11 @@ export const Login = () => {
             <img src={passwordIcon} alt="password"/>
             <input type="password" aria-label="password" name='password' placeholder='Password'></input>
           </div>
+          {formtype==="Login"&&
+            <div className="input-checkbox">
+            <input type="checkbox" id="remember" name="remember" value="remember" defaultChecked={true}/>
+            <label for="remember"> Remember me</label>
+          </div>}
         </div>
         {formtype==="Login"&&
         <div className="forget-password">Forget Password? <span>click here</span></div>}
