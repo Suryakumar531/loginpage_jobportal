@@ -1,8 +1,10 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 import jobLogo from "../assets/job-portal.png"
 
-export const Header = () => {
+export const Header = (props) => {
+  const {link, title} = props
   return (
     <>
         <header className='portal-header'>
@@ -11,7 +13,7 @@ export const Header = () => {
               <h1>Job Portal</h1>
             </div>
             <div className='employer-login-link'>
-                <span>For Employers</span>
+                <Link className='employer-login-link' to={link}>{title}</Link>
             </div>
         </header>
     </>

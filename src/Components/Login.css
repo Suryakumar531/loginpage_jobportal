@@ -83,7 +83,7 @@
 .submit-area {
   display: flex;
   gap: 30px;
-  margin: 50px auto;
+  margin: 30px auto 45px auto;
 }
 
 .submit {

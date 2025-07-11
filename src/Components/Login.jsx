@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import "./Login.css"
 import emailIcon from "../assets/email.png"
 import passwordIcon from "../assets/password.png"
 import nameIcon from "../assets/person.png"
+import {Header} from './Header.jsx'
+import {Footer} from './Footer.jsx'
 
 export const Login = () => {
 
-  const [formtype,setFormtype] = useState("Sign up")
+  const [formtype,setFormtype] = useState("Login")
 
   function signUp(formData){
     const username = formData.get("username")
@@ -24,10 +27,11 @@ export const Login = () => {
 
   return (
     <>
+      <Header link="/loginpage_jobportal/employers" title="For Employers"/>
       <form className='input-container' action={formtype==="Sign up"?signUp:login}>
         <div className="input-header">
-          <div className={formtype==="Sign up"?"input-heading lightgray":"input-heading"} onClick={()=>setFormtype("Sign up")} >Sign up</div>
           <div className={formtype==="Login"?"input-heading lightgray":"input-heading"} onClick={()=>setFormtype("Login")}>Login</div>
+          <div className={formtype==="Sign up"?"input-heading lightgray":"input-heading"} onClick={()=>setFormtype("Sign up")} >Sign up</div>
         </div>
         <div className='input-area'> 
           {formtype==="Sign up"&&
@@ -55,6 +59,7 @@ export const Login = () => {
           <button className='submit'>{formtype}</button>
         </div>
       </form>
+      <Footer />
     </>
   )
 }

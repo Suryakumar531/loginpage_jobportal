@@ -28,7 +28,7 @@
   margin-right: 10px;
 }
 
-.employer-login-link > span {
+.employer-login-link {
   text-decoration: none;
   font-weight: 600;
   color: #a69ec6;
@@ -36,6 +36,6 @@
   cursor: pointer;
 }
 
-.employer-login-link > span:hover {
+.employer-login-link:hover {
   color: #8e85b0;
 }
